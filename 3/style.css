@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 30px;
+}
+textarea {
+    margin-bottom: 10px;
+}
+input[type=submit] {
+    width: 150px;
+}
+.feedbacks {
+    margin-bottom: 20px;
+}
+.feedback_wrp {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.thanks_wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.thanks {
+    text-align: center;
+    margin-top: 100px;
+}
+.return {
+    text-align: center;
+}
