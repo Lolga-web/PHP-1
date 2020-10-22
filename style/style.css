@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+a {
+    color: black;
+    text-decoration: none;  
+}
+.container {
+    padding: 30px;
+}
+.header {
+    padding: 30px;
+    background-color: rgb( 43, 153, 91 );
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 50px;
+    color: white;
+}
+.phone {
+    font-size: 30px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+.goods_title {
+    font-size: 30px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+a.goods_title:hover {
+    color: gray;
+}
+.good_wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+.good_link {
+    width: 100%;
+    display: flex;
+}
+.good_link:hover {
+    opacity: 60%;
+}
+.good_img {
+    width: 200px;
+}
+.good_description {
+    padding: 30px;
+}
+.short_description {
+    margin-top: 20px;
+}
+.buy_good {
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: center; 
+}
+.good_price {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.btn {
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    display: table;
+    width:100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: background-color 0.1s linear;        
+    background-color: rgb( 43, 153, 91 );
+    border: 1px solid rgb( 33, 126, 74 );
+}
+.btn:hover {
+    background-color: rgb( 75, 183, 141 );
+}
+
+/* OPEN */
+.open_good_wrp {
+    display: flex;    
+}
+.open_good_img {
+    width: 700px;
+}
+.open_good_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+.open_good_title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.open_description {
+    font-size: 18px;
+}
+.open_buy_good {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+/* ADMIN */
+.admin_link {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px;
+    display: inline-block;
+}
+.admin_link:hover {
+    text-decoration: underline;
+}
+.admin_good_img {
+    width: 100px;
+}
+.good_title {
+    display: flex;
+    align-items: center;
+}
+.delete_btn {
+    margin-right: 30px;
+}
+.addGood {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.addGood form {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.addGood_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+.addGood form textarea {
+    margin-bottom: 20px;
+}
+.addGood form input[name=price] {
+    width: 200px;
+}
+.thanks {
+    text-align: center;
+}
+.return {
+    text-align: center;
+    display: block;
+}
+.return:hover {
+    text-decoration: underline;
+}
+#result_form {
+    color: red;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px;
+}
+
+/* CART */
+.cart {
+    font-size: 30px;
+    color: white;
+}
+.cart_sum {
+    font-size: 30px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+.cart_empty {
+    font-size: 20px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+
+/* MODAL */
+#modal__btn {
+    cursor: pointer;
+    border: none;
+}
+#modal__btn:active {
+    outline: none;
+}
+#modal__btn:focus {
+    outline: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+.modal__content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 400px;
+    z-index: 99999;
+}
+
+.close__modal__btn {
+    color: #aaa;
+    line-height: 10px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#login {
+    display: flex;
+    justify-content: center;
+}
+.login_form {
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid rgb( 43, 153, 91 );
+    border-radius: 4px;
+}
+.login_form input[type=text] {
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    color: grey;
+    padding: 5px;
+    margin-bottom: 10px;
+}
